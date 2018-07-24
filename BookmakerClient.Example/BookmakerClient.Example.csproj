@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{286629C5-3A38-4C20-94A2-9AACE31101C1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BookmakerClient</RootNamespace>
-    <AssemblyName>BookmakerClient</AssemblyName>
+    <ProjectGuid>{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BookmakerClient.Example</RootNamespace>
+    <AssemblyName>BookmakerClient.Example</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,29 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client\IBookmakerClient.cs" />
-    <Compile Include="Client\WilliamhillClient\WilliamhillClient.cs" />
-    <Compile Include="Client\BookmakerXmlClient.cs" />
-    <Compile Include="Client\WilliamhillClient\XmlClasses\WilliamhillXml.cs" />
-    <Compile Include="Configuration\BookmakerConfiguration.cs" />
-    <Compile Include="Configuration\IBookmakerConfiguration.cs" />
-    <Compile Include="Core\EventsUtils.cs" />
-    <Compile Include="Core\OddsUtils.cs" />
-    <Compile Include="Core\RacingUtils.cs" />
-    <Compile Include="Core\XmlUtils.cs" />
-    <Compile Include="Models\BookmakerFeed.cs" />
-    <Compile Include="Models\BookmakerEvent.cs" />
-    <Compile Include="Models\BookmakerMarket.cs" />
-    <Compile Include="Models\BookmakerOutcome.cs" />
-    <Compile Include="Models\BookmakerSport.cs" />
-    <Compile Include="Models\BookmakerTournament.cs" />
-    <Compile Include="Enums\BookmakerType.cs" />
-    <Compile Include="Enums\MarketType.cs" />
-    <Compile Include="Enums\SportType.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Utils\" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookmakerClient\BookmakerClient.csproj">
+      <Project>{286629c5-3a38-4c20-94a2-9aace31101c1}</Project>
+      <Name>BookmakerClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

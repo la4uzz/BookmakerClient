@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmakerClient", "BookmakerClient\BookmakerClient.csproj", "{286629C5-3A38-4C20-94A2-9AACE31101C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmakerClient.Example", "BookmakerClient.Example\BookmakerClient.Example.csproj", "{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmakerClient.Tests", "BookmakerClient.Tests\BookmakerClient.Tests.csproj", "{66E13B4A-4AF2-40F6-8CBB-2B3219D92165}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{286629C5-3A38-4C20-94A2-9AACE31101C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286629C5-3A38-4C20-94A2-9AACE31101C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286629C5-3A38-4C20-94A2-9AACE31101C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC01AF1-30B9-4453-9AAC-F8010DBD85DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E13B4A-4AF2-40F6-8CBB-2B3219D92165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E13B4A-4AF2-40F6-8CBB-2B3219D92165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E13B4A-4AF2-40F6-8CBB-2B3219D92165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E13B4A-4AF2-40F6-8CBB-2B3219D92165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
